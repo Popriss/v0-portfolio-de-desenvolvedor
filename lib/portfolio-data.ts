@@ -13,12 +13,14 @@ export const portfolioData = {
       experience: "Experiência",
       projects: "Projetos",
       skills: "Skills",
+      certificates: "Certificados",
+      languages: "Idiomas",
       contact: "Contato",
     },
     about: {
       title: "Sobre mim",
       description:
-        "Engenheiro de Computação em formação com sólida experiência prática em Automação de Processos (RPA), Engenharia de Dados e Operações de E-commerce. Foco no desenvolvimento de soluções Full Stack (Python) para integração de APIs de grandes marketplaces (Mercado Livre, Amazon) e otimização de fluxo de caixa. Especialista em ecossistemas automatizados utilizando Cloud Computing (GCP/Cloudflare) e metodologias ágeis.",
+        "Engenheiro de Computação em formação com sólida experiência prática em Automação de Processos (RPA), Engenharia de Dados e Operações de E-commerce. Foco no desenvolvimento de soluções Full Stack (Python) para integração de APIs de grandes marketplaces (Mercado Livre, Amazon) e otimização de fluxo de caixa. Experiente na criação de ecossistemas automatizados utilizando Cloud Computing (GCP/Cloudflare) e metodologias ágeis.",
       highlights: [
         "Automação de Processos (RPA)",
         "Engenharia de Dados",
@@ -97,6 +99,59 @@ export const portfolioData = {
         },
       ],
     },
+    certificates: {
+      title: "Certificados",
+      items: [
+        {
+          title: "Google Cloud Fundamentals: Core Infrastructure",
+          issuer: "Google Cloud / Coursera",
+          year: "2024",
+          credential: "",
+        },
+        {
+          title: "Python for Everybody",
+          issuer: "University of Michigan / Coursera",
+          year: "2023",
+          credential: "",
+        },
+        {
+          title: "Automação com RPA — UiPath Foundations",
+          issuer: "UiPath Academy",
+          year: "2023",
+          credential: "",
+        },
+      ],
+    },
+    languages: {
+      title: "Idiomas",
+      levels: {
+        grammar: "Gramática",
+        reading: "Leitura",
+        listening: "Compreensão",
+        speaking: "Conversação",
+      },
+      items: [
+        {
+          language: "Português",
+          flag: "🇧🇷",
+          native: true,
+          nativeLabel: "Nativo",
+          skills: null,
+        },
+        {
+          language: "Inglês",
+          flag: "🇺🇸",
+          native: false,
+          nativeLabel: null,
+          skills: {
+            grammar: 70,
+            reading: 85,
+            listening: 75,
+            speaking: 60,
+          },
+        },
+      ],
+    },
     contact: {
       title: "Vamos conversar?",
       description:
@@ -124,12 +179,14 @@ export const portfolioData = {
       experience: "Experience",
       projects: "Projects",
       skills: "Skills",
+      certificates: "Certificates",
+      languages: "Languages",
       contact: "Contact",
     },
     about: {
       title: "About me",
       description:
-        "Computer Engineering student with solid hands-on experience in Process Automation (RPA), Data Engineering, and E-commerce Operations. Focused on developing Full Stack solutions (Python) for API integration with major marketplaces (Mercado Livre, Amazon) and cash flow optimization. Specialist in automated ecosystems using Cloud Computing (GCP/Cloudflare) and agile methodologies.",
+        "Computer Engineering student with solid hands-on experience in Process Automation (RPA), Data Engineering, and E-commerce Operations. Focused on developing Full Stack solutions (Python) for API integration with major marketplaces (Mercado Livre, Amazon) and cash flow optimization. Experienced in building automated ecosystems using Cloud Computing (GCP/Cloudflare) and agile methodologies.",
       highlights: [
         "Process Automation (RPA)",
         "Data Engineering",
@@ -205,6 +262,59 @@ export const portfolioData = {
         {
           name: "Specialties",
           items: ["API Integration", "Automation", "E-commerce"],
+        },
+      ],
+    },
+    certificates: {
+      title: "Certificates",
+      items: [
+        {
+          title: "Google Cloud Fundamentals: Core Infrastructure",
+          issuer: "Google Cloud / Coursera",
+          year: "2024",
+          credential: "",
+        },
+        {
+          title: "Python for Everybody",
+          issuer: "University of Michigan / Coursera",
+          year: "2023",
+          credential: "",
+        },
+        {
+          title: "RPA Automation — UiPath Foundations",
+          issuer: "UiPath Academy",
+          year: "2023",
+          credential: "",
+        },
+      ],
+    },
+    languages: {
+      title: "Languages",
+      levels: {
+        grammar: "Grammar",
+        reading: "Reading",
+        listening: "Listening",
+        speaking: "Speaking",
+      },
+      items: [
+        {
+          language: "Portuguese",
+          flag: "🇧🇷",
+          native: true,
+          nativeLabel: "Native",
+          skills: null,
+        },
+        {
+          language: "English",
+          flag: "🇺🇸",
+          native: false,
+          nativeLabel: null,
+          skills: {
+            grammar: 70,
+            reading: 85,
+            listening: 75,
+            speaking: 60,
+          },
         },
       ],
     },

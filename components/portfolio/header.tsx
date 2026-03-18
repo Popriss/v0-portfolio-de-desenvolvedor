@@ -49,6 +49,18 @@ export function Header() {
             {t.nav.skills}
           </Link>
           <Link
+            href="#certificates"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {t.nav.certificates}
+          </Link>
+          <Link
+            href="#languages"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {t.nav.languages}
+          </Link>
+          <Link
             href="#contact"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
