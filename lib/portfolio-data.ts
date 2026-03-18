@@ -13,12 +13,14 @@ export const portfolioData = {
       experience: "Experiência",
       projects: "Projetos",
       skills: "Skills",
+      learning: "Aprendizado",
+      languages: "Idiomas",
       contact: "Contato",
     },
     about: {
       title: "Sobre mim",
       description:
-        "Engenheiro de Computação em formação com sólida experiência prática em Automação de Processos (RPA), Engenharia de Dados e Operações de E-commerce. Foco no desenvolvimento de soluções Full Stack (Python) para integração de APIs de grandes marketplaces (Mercado Livre, Amazon) e otimização de fluxo de caixa. Especialista em ecossistemas automatizados utilizando Cloud Computing (GCP/Cloudflare) e metodologias ágeis.",
+        "Engenheiro de Computação em formação com sólida experiência prática em Automação de Processos (RPA), Engenharia de Dados e Operações de E-commerce. Foco no desenvolvimento de soluções Full Stack (Python) para integração de APIs de grandes marketplaces (Mercado Livre, Amazon) e otimização de fluxo de caixa. Experiente na criação de ecossistemas automatizados utilizando Cloud Computing (GCP/Cloudflare) e metodologias ágeis.",
       highlights: [
         "Automação de Processos (RPA)",
         "Engenharia de Dados",
@@ -77,23 +79,101 @@ export const portfolioData = {
       ],
     },
     skills: {
-      title: "Tecnologias & Skills",
+      title: "Skills & Tecnologias",
       categories: [
         {
           name: "Linguagens",
-          items: ["Python", "JavaScript", "Java", "C++", "SQL"],
+          items: [
+            { name: "Python", icon: "python", color: "#3776AB" },
+            { name: "JavaScript", icon: "javascript", color: "#F7DF1E" },
+            { name: "Java", icon: "openjdk", color: "#ED8B00" },
+            { name: "C++", icon: "cplusplus", color: "#00599C" },
+            { name: "SQL", icon: "postgresql", color: "#4169E1" },
+          ],
         },
         {
           name: "Cloud & Infra",
-          items: ["GCP", "Cloudflare R2", "Docker", "PostgreSQL"],
+          items: [
+            { name: "GCP", icon: "googlecloud", color: "#4285F4" },
+            { name: "Cloudflare", icon: "cloudflare", color: "#F38020" },
+            { name: "Docker", icon: "docker", color: "#2496ED" },
+            { name: "PostgreSQL", icon: "postgresql", color: "#4169E1" },
+          ],
         },
         {
           name: "Frameworks & Tools",
-          items: ["React", "Angular", "Git", "RPA"],
+          items: [
+            { name: "React", icon: "react", color: "#61DAFB" },
+            { name: "Angular", icon: "angular", color: "#DD0031" },
+            { name: "Git", icon: "git", color: "#F05032" },
+            { name: "Trello", icon: "trello", color: "#0052CC" },
+          ],
         },
         {
           name: "Especialidades",
-          items: ["Integração de APIs", "Automação", "E-commerce"],
+          items: [
+            { name: "Mercado Livre", icon: "mercadolibre", color: "#FFE600" },
+            { name: "Amazon", icon: "amazon", color: "#FF9900" },
+            { name: "Arduino", icon: "arduino", color: "#00979D" },
+            { name: "UiPath", icon: "uipath", color: "#FA4616" },
+          ],
+        },
+      ],
+    },
+    learning: {
+      title: "Aprendizado",
+      educationLabel: "Formação Acadêmica",
+      certificatesLabel: "Certificações",
+      profilesLabel: "Perfis de Aprendizado",
+      education: [
+        {
+          degree: "Bacharelado em Engenharia da Computação",
+          institution: "Centro Universitário Facens",
+          period: "2022 — Nov 2026",
+          status: "Cursando",
+        },
+      ],
+      certificates: [
+        { title: "Google Cloud Fundamentals: Core Infrastructure", issuer: "Google Cloud / Coursera", year: "2024", credential: "" },
+        { title: "Python for Everybody", issuer: "University of Michigan / Coursera", year: "2023", credential: "" },
+        { title: "Automação com RPA — UiPath Foundations", issuer: "UiPath Academy", year: "2023", credential: "" },
+        { title: "Desenvolvimento em Python — POO e Projetos", issuer: "ETEC / Alura", year: "2022", credential: "" },
+        { title: "Ciência de Dados com Python", issuer: "Alura", year: "2022", credential: "" },
+        { title: "Design Thinking", issuer: "IDEO / Coursera", year: "2022", credential: "" },
+      ],
+      profiles: [
+        { name: "GitHub", url: "https://github.com/pedromodesto" },
+        { name: "LinkedIn Learning", url: "https://www.linkedin.com/in/pedro-modesto-0a3451250" },
+        { name: "Google Cloud Skills", url: "https://www.cloudskillsboost.google" },
+      ],
+    },
+    languages: {
+      title: "Idiomas",
+      levels: {
+        grammar: "Gramática",
+        reading: "Leitura",
+        listening: "Compreensão",
+        speaking: "Conversação",
+      },
+      items: [
+        {
+          language: "Português",
+          flag: "🇧🇷",
+          native: true,
+          nativeLabel: "Nativo",
+          skills: null,
+        },
+        {
+          language: "Inglês",
+          flag: "🇺🇸",
+          native: false,
+          nativeLabel: null,
+          skills: {
+            grammar: 70,
+            reading: 85,
+            listening: 80,
+            speaking: 60,
+          },
         },
       ],
     },
@@ -102,8 +182,10 @@ export const portfolioData = {
       description:
         "Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato!",
       email: "pedromodesto1712@gmail.com",
+      phone: "+55 15 99685-8060",
       emailLabel: "Email",
       linkedinLabel: "LinkedIn",
+      whatsappLabel: "WhatsApp",
     },
     footer: {
       rights: "Todos os direitos reservados.",
@@ -124,12 +206,14 @@ export const portfolioData = {
       experience: "Experience",
       projects: "Projects",
       skills: "Skills",
+      learning: "Learning",
+      languages: "Languages",
       contact: "Contact",
     },
     about: {
       title: "About me",
       description:
-        "Computer Engineering student with solid hands-on experience in Process Automation (RPA), Data Engineering, and E-commerce Operations. Focused on developing Full Stack solutions (Python) for API integration with major marketplaces (Mercado Livre, Amazon) and cash flow optimization. Specialist in automated ecosystems using Cloud Computing (GCP/Cloudflare) and agile methodologies.",
+        "Computer Engineering student with solid hands-on experience in Process Automation (RPA), Data Engineering, and E-commerce Operations. Focused on developing Full Stack solutions (Python) for API integration with major marketplaces (Mercado Livre, Amazon) and cash flow optimization. Experienced in building automated ecosystems using Cloud Computing (GCP/Cloudflare) and agile methodologies.",
       highlights: [
         "Process Automation (RPA)",
         "Data Engineering",
@@ -188,23 +272,101 @@ export const portfolioData = {
       ],
     },
     skills: {
-      title: "Technologies & Skills",
+      title: "Skills & Technologies",
       categories: [
         {
           name: "Languages",
-          items: ["Python", "JavaScript", "Java", "C++", "SQL"],
+          items: [
+            { name: "Python", icon: "python", color: "#3776AB" },
+            { name: "JavaScript", icon: "javascript", color: "#F7DF1E" },
+            { name: "Java", icon: "openjdk", color: "#ED8B00" },
+            { name: "C++", icon: "cplusplus", color: "#00599C" },
+            { name: "SQL", icon: "postgresql", color: "#4169E1" },
+          ],
         },
         {
           name: "Cloud & Infra",
-          items: ["GCP", "Cloudflare R2", "Docker", "PostgreSQL"],
+          items: [
+            { name: "GCP", icon: "googlecloud", color: "#4285F4" },
+            { name: "Cloudflare", icon: "cloudflare", color: "#F38020" },
+            { name: "Docker", icon: "docker", color: "#2496ED" },
+            { name: "PostgreSQL", icon: "postgresql", color: "#4169E1" },
+          ],
         },
         {
           name: "Frameworks & Tools",
-          items: ["React", "Angular", "Git", "RPA"],
+          items: [
+            { name: "React", icon: "react", color: "#61DAFB" },
+            { name: "Angular", icon: "angular", color: "#DD0031" },
+            { name: "Git", icon: "git", color: "#F05032" },
+            { name: "Trello", icon: "trello", color: "#0052CC" },
+          ],
         },
         {
           name: "Specialties",
-          items: ["API Integration", "Automation", "E-commerce"],
+          items: [
+            { name: "Mercado Livre", icon: "mercadolibre", color: "#FFE600" },
+            { name: "Amazon", icon: "amazon", color: "#FF9900" },
+            { name: "Arduino", icon: "arduino", color: "#00979D" },
+            { name: "UiPath", icon: "uipath", color: "#FA4616" },
+          ],
+        },
+      ],
+    },
+    learning: {
+      title: "Learning",
+      educationLabel: "Academic Background",
+      certificatesLabel: "Certifications",
+      profilesLabel: "Learning Profiles",
+      education: [
+        {
+          degree: "Bachelor's in Computer Engineering",
+          institution: "Centro Universitário Facens",
+          period: "2022 — Nov 2026",
+          status: "In Progress",
+        },
+      ],
+      certificates: [
+        { title: "Google Cloud Fundamentals: Core Infrastructure", issuer: "Google Cloud / Coursera", year: "2024", credential: "" },
+        { title: "Python for Everybody", issuer: "University of Michigan / Coursera", year: "2023", credential: "" },
+        { title: "RPA Automation — UiPath Foundations", issuer: "UiPath Academy", year: "2023", credential: "" },
+        { title: "Python Development — OOP & Projects", issuer: "ETEC / Alura", year: "2022", credential: "" },
+        { title: "Data Science with Python", issuer: "Alura", year: "2022", credential: "" },
+        { title: "Design Thinking", issuer: "IDEO / Coursera", year: "2022", credential: "" },
+      ],
+      profiles: [
+        { name: "GitHub", url: "https://github.com/pedromodesto" },
+        { name: "LinkedIn Learning", url: "https://www.linkedin.com/in/pedro-modesto-0a3451250" },
+        { name: "Google Cloud Skills", url: "https://www.cloudskillsboost.google" },
+      ],
+    },
+    languages: {
+      title: "Languages",
+      levels: {
+        grammar: "Grammar",
+        reading: "Reading",
+        listening: "Listening",
+        speaking: "Speaking",
+      },
+      items: [
+        {
+          language: "Portuguese",
+          flag: "🇧🇷",
+          native: true,
+          nativeLabel: "Native",
+          skills: null,
+        },
+        {
+          language: "English",
+          flag: "🇺🇸",
+          native: false,
+          nativeLabel: null,
+          skills: {
+            grammar: 70,
+            reading: 85,
+            listening: 80,
+            speaking: 60,
+          },
         },
       ],
     },
@@ -213,8 +375,10 @@ export const portfolioData = {
       description:
         "I'm always open to new opportunities and interesting projects. Get in touch!",
       email: "pedromodesto1712@gmail.com",
+      phone: "+55 15 99685-8060",
       emailLabel: "Email",
       linkedinLabel: "LinkedIn",
+      whatsappLabel: "WhatsApp",
     },
     footer: {
       rights: "All rights reserved.",
@@ -227,6 +391,8 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/pedro-modesto-0a3451250",
   email: "mailto:pedromodesto1712@gmail.com",
   github: "https://github.com/pedromodesto",
+  whatsapp: "https://wa.me/5515996858060",
+  phone: "tel:+5515996858060",
 } as const;
 
 export type Language = "pt" | "en";
