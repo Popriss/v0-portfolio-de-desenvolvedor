@@ -112,8 +112,8 @@ export const portfolioData = {
         {
           name: "Especialidades",
           items: [
-            { name: "Mercado Livre", icon: "mercadolibre", color: "#FFE600" },
-            { name: "Amazon", icon: "amazon", color: "#FF9900" },
+            { name: "Mercado Livre", icon: "", color: "#FFE600" },
+            { name: "Amazon", icon: "", color: "#FF9900" },
             { name: "Arduino", icon: "arduino", color: "#00979D" },
             { name: "UiPath", icon: "uipath", color: "#FA4616" },
           ],
@@ -134,17 +134,11 @@ export const portfolioData = {
         },
       ],
       certificates: [
-        { title: "Google Cloud Fundamentals: Core Infrastructure", issuer: "Google Cloud / Coursera", year: "2024", credential: "" },
-        { title: "Python for Everybody", issuer: "University of Michigan / Coursera", year: "2023", credential: "" },
-        { title: "Automação com RPA — UiPath Foundations", issuer: "UiPath Academy", year: "2023", credential: "" },
-        { title: "Desenvolvimento em Python — POO e Projetos", issuer: "ETEC / Alura", year: "2022", credential: "" },
-        { title: "Ciência de Dados com Python", issuer: "Alura", year: "2022", credential: "" },
-        { title: "Design Thinking", issuer: "IDEO / Coursera", year: "2022", credential: "" },
+        { title: "", issuer: "", year: "", credential: "" },
       ],
       profiles: [
-        { name: "GitHub", url: "https://github.com/pedromodesto" },
+        { name: "GitHub", url: "https://github.com/Popriss" },
         { name: "LinkedIn Learning", url: "https://www.linkedin.com/in/pedro-modesto-0a3451250" },
-        { name: "Google Cloud Skills", url: "https://www.cloudskillsboost.google" },
       ],
     },
     languages: {
@@ -327,17 +321,11 @@ export const portfolioData = {
         },
       ],
       certificates: [
-        { title: "Google Cloud Fundamentals: Core Infrastructure", issuer: "Google Cloud / Coursera", year: "2024", credential: "" },
-        { title: "Python for Everybody", issuer: "University of Michigan / Coursera", year: "2023", credential: "" },
-        { title: "RPA Automation — UiPath Foundations", issuer: "UiPath Academy", year: "2023", credential: "" },
-        { title: "Python Development — OOP & Projects", issuer: "ETEC / Alura", year: "2022", credential: "" },
-        { title: "Data Science with Python", issuer: "Alura", year: "2022", credential: "" },
-        { title: "Design Thinking", issuer: "IDEO / Coursera", year: "2022", credential: "" },
+        { title: "", issuer: "", year: "", credential: "" },
       ],
       profiles: [
-        { name: "GitHub", url: "https://github.com/pedromodesto" },
+        { name: "GitHub", url: "https://github.com/Popriss" },
         { name: "LinkedIn Learning", url: "https://www.linkedin.com/in/pedro-modesto-0a3451250" },
-        { name: "Google Cloud Skills", url: "https://www.cloudskillsboost.google" },
       ],
     },
     languages: {
@@ -390,7 +378,7 @@ export const portfolioData = {
 export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/pedro-modesto-0a3451250",
   email: "mailto:pedromodesto1712@gmail.com",
-  github: "https://github.com/pedromodesto",
+  github: "https://github.com/Popriss",
   whatsapp: "https://wa.me/5515996858060",
   phone: "tel:+5515996858060",
 } as const;
