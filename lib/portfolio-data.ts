@@ -129,7 +129,7 @@ export const portfolioData = {
         {
           degree: "Bacharelado em Engenharia da Computação",
           institution: "Centro Universitário Facens",
-          period: "2022 — Nov 2026",
+          period: "2022 — Dez 2026",
           status: "Cursando",
         },
       ],
@@ -316,7 +316,7 @@ export const portfolioData = {
         {
           degree: "Bachelor's in Computer Engineering",
           institution: "Centro Universitário Facens",
-          period: "2022 — Nov 2026",
+          period: "2022 — Dec 2026",
           status: "In Progress",
         },
       ],
