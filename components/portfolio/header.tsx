@@ -49,10 +49,10 @@ export function Header() {
             {t.nav.skills}
           </Link>
           <Link
-            href="#certificates"
+            href="#learning"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            {t.nav.certificates}
+            {t.nav.learning}
           </Link>
           <Link
             href="#languages"

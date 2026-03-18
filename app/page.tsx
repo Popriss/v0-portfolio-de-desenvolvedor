@@ -7,7 +7,7 @@ import { About } from "@/components/portfolio/about";
 import { Experience } from "@/components/portfolio/experience";
 import { Projects } from "@/components/portfolio/projects";
 import { Skills } from "@/components/portfolio/skills";
-import { Certificates } from "@/components/portfolio/certificates";
+import { Learning } from "@/components/portfolio/learning";
 import { Languages } from "@/components/portfolio/languages";
 import { Contact } from "@/components/portfolio/contact";
 import { Footer } from "@/components/portfolio/footer";
@@ -23,7 +23,7 @@ export default function Portfolio() {
           <Experience />
           <Projects />
           <Skills />
-          <Certificates />
+          <Learning />
           <Languages />
           <Contact />
         </main>

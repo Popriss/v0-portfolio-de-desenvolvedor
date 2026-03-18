@@ -2,113 +2,100 @@
 
 import { useLanguage } from "@/lib/language-context";
 
-type SkillBarProps = {
-  label: string;
-  value: number;
-};
+interface SkillLevel {
+  grammar: number;
+  reading: number;
+  listening: number;
+  speaking: number;
+}
 
-function SkillBar({ label, value }: SkillBarProps) {
-  const level =
-    value >= 90
-      ? "Fluente"
-      : value >= 70
-      ? "Avançado"
-      : value >= 50
-      ? "Intermediário"
-      : "Básico";
-
+function LanguageCard({
+  language,
+  flag,
+  native,
+  nativeLabel,
+  skills,
+  levels,
+}: {
+  language: string;
+  flag: string;
+  native: boolean;
+  nativeLabel?: string;
+  skills: SkillLevel | null;
+  levels: Record<string, string>;
+}) {
   return (
-    <div className="flex flex-col gap-1.5">
-      <div className="flex items-center justify-between">
-        <span className="text-xs text-muted-foreground">{label}</span>
-        <span className="text-xs font-mono text-primary/80">{value}%</span>
+    <div className="rounded-lg border border-border/40 bg-card/50 p-6 hover:border-primary/30 transition-colors">
+      <div className="flex items-center gap-3 mb-6">
+        <span className="text-2xl">{flag}</span>
+        <div>
+          <h3 className="text-sm font-semibold text-foreground">{language}</h3>
+          {native && nativeLabel && (
+            <p className="text-xs text-primary font-medium">{nativeLabel}</p>
+          )}
+        </div>
       </div>
-      <div
-        className="h-1.5 w-full rounded-full bg-border/60 overflow-hidden"
-        role="progressbar"
-        aria-valuenow={value}
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-label={`${label}: ${value}% — ${level}`}
-      >
-        <div
-          className="h-full rounded-full bg-primary/70 transition-all duration-700"
-          style={{ width: `${value}%` }}
-        />
-      </div>
+
+      {native ? (
+        <div className="grid grid-cols-2 gap-3">
+          {Object.entries(levels).map(([key, label]) => (
+            <div key={key}>
+              <p className="text-xs text-muted-foreground mb-2">{label}</p>
+              <div className="h-2 bg-muted/30 rounded-full overflow-hidden">
+                <div className="h-full w-full bg-primary rounded-full" />
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : skills ? (
+        <div className="grid grid-cols-2 gap-3">
+          {Object.entries(levels).map(([key, label]) => {
+            const skillKey = key as keyof SkillLevel;
+            const percentage = skills[skillKey];
+            return (
+              <div key={key}>
+                <p className="text-xs text-muted-foreground mb-2">{label}</p>
+                <div className="h-2 bg-muted/30 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-primary rounded-full transition-all"
+                    style={{ width: `${percentage}%` }}
+                  />
+                </div>
+                <p className="text-xs text-muted-foreground mt-1">{percentage}%</p>
+              </div>
+            );
+          })}
+        </div>
+      ) : null}
     </div>
   );
 }
 
 export function Languages() {
   const { t } = useLanguage();
+  const data = t.languages;
 
   return (
-    <section id="languages" className="py-24 border-t border-border/40">
-      <div className="container mx-auto px-6 max-w-4xl">
-        <h2 className="text-2xl font-semibold text-foreground mb-12">
-          {t.languages.title}
-        </h2>
+    <section id="languages" className="py-24 md:py-32 bg-card/30">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-sm uppercase tracking-[0.2em] text-primary mb-12">
+            {data.title}
+          </h2>
 
-        <div className="grid gap-5 sm:grid-cols-2">
-          {t.languages.items.map((lang, index) => (
-            <div
-              key={index}
-              className="rounded-lg border border-border/40 bg-card/50 p-6 hover:border-primary/30 transition-all duration-200"
-            >
-              <div className="flex items-center gap-3 mb-5">
-                <span className="text-2xl" role="img" aria-label={lang.language}>
-                  {lang.flag}
-                </span>
-                <div>
-                  <h3 className="text-base font-semibold text-foreground">
-                    {lang.language}
-                  </h3>
-                  {lang.native && lang.nativeLabel && (
-                    <span className="text-xs text-primary/80 font-medium">
-                      {lang.nativeLabel}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              {lang.native ? (
-                <div className="flex flex-col gap-1.5">
-                  {(
-                    ["grammar", "reading", "listening", "speaking"] as const
-                  ).map((key) => (
-                    <div key={key} className="flex flex-col gap-1.5">
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs text-muted-foreground">
-                          {t.languages.levels[key]}
-                        </span>
-                        <span className="text-xs font-mono text-primary/80">
-                          100%
-                        </span>
-                      </div>
-                      <div className="h-1.5 w-full rounded-full bg-border/60 overflow-hidden">
-                        <div className="h-full w-full rounded-full bg-primary/70" />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                lang.skills && (
-                  <div className="flex flex-col gap-3">
-                    {(
-                      ["grammar", "reading", "listening", "speaking"] as const
-                    ).map((key) => (
-                      <SkillBar
-                        key={key}
-                        label={t.languages.levels[key]}
-                        value={lang.skills![key]}
-                      />
-                    ))}
-                  </div>
-                )
-              )}
-            </div>
-          ))}
+          <div className="grid sm:grid-cols-2 gap-6">
+            {data.items.map((item, i) => (
+              <LanguageCard
+                key={i}
+                language={item.language}
+                flag={item.flag}
+                native={item.native}
+                nativeLabel={item.nativeLabel || undefined}
+                skills={item.skills}
+                levels={data.levels}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
