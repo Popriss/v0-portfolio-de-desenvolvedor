@@ -20,10 +20,10 @@ export const portfolioData = {
     about: {
       title: "Sobre mim",
       description:
-        "Engenheiro de Computação em formação com sólida experiência prática em Automação de Processos (RPA), Engenharia de Dados e Operações de E-commerce. Foco no desenvolvimento de soluções Full Stack (Python) para integração de APIs de grandes marketplaces (Mercado Livre, Amazon) e otimização de fluxo de caixa. Experiente na criação de ecossistemas automatizados utilizando Cloud Computing (GCP/Cloudflare) e metodologias ágeis.",
+        "Engenheiro de Computação em formação com sólida experiência prática em Automação de Processos (RPA), Estruturação de Dados e Operações de E-commerce. Foco no desenvolvimento de soluções Full Stack (Python) para integração de APIs de grandes marketplaces (Mercado Livre, Amazon) e otimização de fluxo de caixa. Experiente na criação de ecossistemas automatizados utilizando Cloud Computing (GCP/Cloudflare) e metodologias ágeis.",
       highlights: [
         "Automação de Processos (RPA)",
-        "Engenharia de Dados",
+        "Estruturação de Dados",
         "Full Stack Python",
         "Cloud Computing",
       ],
@@ -33,10 +33,10 @@ export const portfolioData = {
       items: [
         {
           company: "E-commerce CoutinhoShop",
-          role: "Automações e Engenharia de Dados",
+          role: "Automações e Estruturação de Dados",
           period: "11/2025 - Atual",
           description:
-            "Responsável pela estruturação do departamento de Automações e Engenharia de Dados. Desenvolvimento de aplicações em Python para orquestração de pedidos e priorização de tarefas via Trello. Criação de sistema de visualização de promoções (Mercado Livre) e ferramenta de upload simultâneo de imagens (Cloudflare R2) para múltiplas lojas. Implementação de dashboards baseados em PostgreSQL e GCP.",
+            "Responsável pela estruturação do departamento de Automações e Estruturação de Dados. Desenvolvimento de aplicações em Python para orquestração de pedidos e priorização de tarefas via Trello. Criação de sistema de visualização de promoções (Mercado Livre) e ferramenta de upload simultâneo de imagens (Cloudflare R2) para múltiplas lojas. Implementação de dashboards baseados em PostgreSQL e GCP.",
           techs: ["Python", "PostgreSQL", "GCP", "Cloudflare R2", "Trello API"],
         },
         {
@@ -207,10 +207,10 @@ export const portfolioData = {
     about: {
       title: "About me",
       description:
-        "Computer Engineering student with solid hands-on experience in Process Automation (RPA), Data Engineering, and E-commerce Operations. Focused on developing Full Stack solutions (Python) for API integration with major marketplaces (Mercado Livre, Amazon) and cash flow optimization. Experienced in building automated ecosystems using Cloud Computing (GCP/Cloudflare) and agile methodologies.",
+        "Computer Engineering student with solid hands-on experience in Process Automation (RPA), Data Structuring, and E-commerce Operations. Focused on developing Full Stack solutions (Python) for API integration with major marketplaces (Mercado Livre, Amazon) and cash flow optimization. Experienced in building automated ecosystems using Cloud Computing (GCP/Cloudflare) and agile methodologies.",
       highlights: [
         "Process Automation (RPA)",
-        "Data Engineering",
+        "Data Structuring",
         "Full Stack Python",
         "Cloud Computing",
       ],
@@ -220,7 +220,7 @@ export const portfolioData = {
       items: [
         {
           company: "E-commerce CoutinhoShop",
-          role: "Automation & Data Engineering",
+          role: "Automation & Data Structuring",
           period: "11/2025 - Present",
           description:
             "Responsible for structuring the Automation and Data Engineering department. Development of Python applications for order orchestration and task prioritization via Trello. Creation of promotion visualization system (Mercado Livre) and simultaneous image upload tool (Cloudflare R2) for multiple stores. Implementation of dashboards based on PostgreSQL and GCP.",
