@@ -134,7 +134,36 @@ export const portfolioData = {
         },
       ],
       certificates: [
-        { title: "", issuer: "", year: "", credential: "" },
+        {
+          title: "Soluções de IA no GitHub",
+          issuer: "Fundação Bradesco (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6xHW6GD4mnWeKQZ7XGYOEE",
+        },
+        {
+          title: "Inteligência Artificial para ONGs",
+          issuer: "Fundação Bradesco (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6mr4L6LaGY%252fUD%252fg3id5HPt",
+        },
+        {
+          title: "IA na Prática: Como Dados bem Estruturados fazem a Diferença",
+          issuer: "Fundação Bradesco (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6Cq8WwQA%252bTgLzVoZUjwz56",
+        },
+        {
+          title: "Ética na Era da IA",
+          issuer: "Fundação Bradesco (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6Cq8WwQA%252bTgFo319goAEQX",
+        },
+        {
+          title: "Comunicação e Mobilização com IA",
+          issuer: "Fundação Bradesco (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6Cq8WwQA%252bTgHyCKUSZ2yCd",
+        },
       ],
       profiles: [
         { name: "GitHub", url: "https://github.com/Popriss" },
@@ -321,7 +350,36 @@ export const portfolioData = {
         },
       ],
       certificates: [
-        { title: "", issuer: "", year: "", credential: "" },
+        {
+          title: "AI Solutions on GitHub",
+          issuer: "Bradesco Foundation (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6xHW6GD4mnWeKQZ7XGYOEE",
+        },
+        {
+          title: "Artificial Intelligence for Nonprofits",
+          issuer: "Bradesco Foundation (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6mr4L6LaGY%252fUD%252fg3id5HPt",
+        },
+        {
+          title: "AI in Practice: How Well-Structured Data Makes a Difference",
+          issuer: "Bradesco Foundation (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6Cq8WwQA%252bTgLzVoZUjwz56",
+        },
+        {
+          title: "Ethics in the Era of AI",
+          issuer: "Bradesco Foundation (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6Cq8WwQA%252bTgFo319goAEQX",
+        },
+        {
+          title: "Communication and Engagement with AI",
+          issuer: "Bradesco Foundation (Microsoft)",
+          year: "2026",
+          credential: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?uid=7689660&p=eiStijbB2F6Cq8WwQA%252bTgHyCKUSZ2yCd",
+        },
       ],
       profiles: [
         { name: "GitHub", url: "https://github.com/Popriss" },
