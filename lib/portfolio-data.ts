@@ -53,6 +53,24 @@ export const portfolioData = {
       title: "Projetos de Destaque",
       items: [
         {
+          title: "Solyd3D — SaaS ERP & Gestão de Produção 3D",
+          description:
+            "Sistema ERP e MES para gestão de impressão 3D FDM com cotação instantânea, Kanban visual com drag-and-drop, controle de filamento em gramas, remessas em consignação e netting financeiro entre sócios.",
+          techs: ["Next.js 16", "React 19", "PostgreSQL", "Prisma ORM", "NextAuth.js", "Recharts"],
+        },
+        {
+          title: "Solyd3D Loja — E-commerce & Storefront",
+          description:
+            "Storefront de e-commerce integrado ao ERP Solyd3D, oferecendo catálogo de peças com seletor dinâmico de cores alimentado pelo estoque ativo de filamentos e checkout via WhatsApp.",
+          techs: ["Next.js", "React", "Prisma ORM", "PostgreSQL", "Tailwind CSS"],
+        },
+        {
+          title: "NullPort — Chat Efêmero em Tempo Real",
+          description:
+            "Chat seguro e efêmero com acesso Zero-Login. Utiliza Server-Sent Events (SSE) para bypass de firewalls corporativos, compressão de imagens client-side e armazenamento híbrido no Supabase e Cloudflare R2.",
+          techs: ["Python 3.12", "FastAPI", "React 19", "SSE", "Supabase", "Cloudflare R2"],
+        },
+        {
           title: "SGI-SKU & Upload Amazon",
           description:
             "Sistema de gerenciamento de imagens e SKUs integrado com a AWS para operações de e-commerce em larga escala.",
