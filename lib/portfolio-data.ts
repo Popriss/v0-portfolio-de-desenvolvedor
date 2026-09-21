@@ -299,27 +299,57 @@ export const portfolioData = {
       title: "Featured Projects",
       items: [
         {
+          title: "Solyd3D — SaaS ERP & 3D Production Management",
+          description:
+            "ERP and MES system for FDM 3D printing management featuring instant quoting, visual drag-and-drop Kanban, filament tracking in grams, consignment shipments, and financial netting between partners.",
+          techs: ["Next.js 16", "React 19", "PostgreSQL", "Prisma ORM", "NextAuth.js", "Recharts"],
+        },
+        {
+          title: "Solyd3D Store — E-commerce & Storefront",
+          description:
+            "E-commerce storefront integrated with the Solyd3D ERP, offering a parts catalog with a dynamic color selector powered by active filament inventory and a WhatsApp-based checkout.",
+          techs: ["Next.js", "React", "Prisma ORM", "PostgreSQL", "Tailwind CSS"],
+        },
+        {
+          title: "NullPort — Real-Time Ephemeral Chat",
+          description:
+            "Secure and ephemeral chat with Zero-Login access. Utilizes Server-Sent Events (SSE) for corporate firewall bypass, client-side image compression, and hybrid storage on Supabase and Cloudflare R2.",
+          techs: ["Python 3.12", "FastAPI", "React 19", "SSE", "Supabase", "Cloudflare R2"],
+        },
+        {
+          title: "CVauto v7.0 — RPA & Data Governance",
+          description:
+            "Automation robot (Manifest V3) for batch cancellations in ClickVita. Features tabbed TSV input (Excel), Intelligent Skip logic, Server-Sync, anti-crash hybrid memory, and PDF audit report generation.",
+          techs: ["JavaScript", "Chrome Extension (Manifest V3)", "RPA", "DOM Manipulation", "PDF Generation", "LocalStorage"],
+        },
+        {
+          title: "HuggyHelper v9.0 — Customer Support Copilot & Compliance",
+          description:
+            "Assistive extension for the Huggy.app platform. Utilizes Shadow DOM injection for visual isolation, dynamic text shortcuts, Chat ID-linked notes, an ergonomic Ghost Mode, and a Garbage Collector for LGPD compliance.",
+          techs: ["JavaScript", "Shadow DOM", "Chrome Extension (Manifest V3)", "Chrome Storage API", "LGPD Compliance", "UX/UI"],
+        },
+        {
           title: "SGI-SKU & Amazon Upload",
           description:
             "Image and SKU management system integrated with AWS for large-scale e-commerce operations.",
           techs: ["Python", "AWS S3", "Amazon API", "PostgreSQL"],
         },
         {
-          title: "Order Assistant & Pricing",
+          title: "Order Assistant & Dynamic Pricing",
           description:
             "Order orchestration automation and dynamic pricing system for e-commerce with multiple integrations.",
           techs: ["Python", "Mercado Livre API", "RPA", "PostgreSQL"],
         },
         {
-          title: "Smart Renewable Garden",
+          title: "Smart and Renewable Greenhouse",
           description:
-            "Automated system for plant cultivation using Arduino, humidity sensors, and solenoids for smart irrigation.",
-          techs: ["Arduino", "C++", "IoT", "Sensors"],
+            "Automated plant cultivation system utilizing Arduino, moisture sensors, and solenoids for smart irrigation.",
+          techs: ["Arduino", "C++", "IoT", "Sensores"],
         },
         {
-          title: "University Carpooling Platform",
+          title: "University Carpool Platform",
           description:
-            "Web platform to facilitate ride-sharing among university students with a matching system.",
+            "Web platform designed to facilitate ride-sharing among university students, featuring an automated matching system.",
           techs: ["Python", "Angular", "PostgreSQL", "REST API"],
         },
       ],
