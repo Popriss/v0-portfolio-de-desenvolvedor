@@ -71,6 +71,18 @@ export const portfolioData = {
           techs: ["Python 3.12", "FastAPI", "React 19", "SSE", "Supabase", "Cloudflare R2"],
         },
         {
+          title: "CVauto v7.0 — RPA & Governança de Dados",
+          description:
+            "Robô de automação (Manifest V3) para cancelamentos em lote no ClickVita. Possui entrada tabulada TSV (Excel), lógica Intelligent Skip, sincronização com servidor (Server-Sync), memória híbrida anti-queda e emissão de relatórios de auditoria em PDF.",
+          techs: ["JavaScript", "Chrome Extension (Manifest V3)", "RPA", "DOM Manipulation", "PDF Generation", "LocalStorage"],
+        },
+        {
+          title: "HuggyHelper v9.0 — Copiloto de Atendimento & Compliance",
+          description:
+            "Extensão assistida para a plataforma Huggy.app. Utiliza Injeção por Shadow DOM para isolamento visual, atalhos de texto dinâmicos, notas vinculadas ao Chat ID, Ghost Mode ergonômico e Garbage Collector para conformidade com a LGPD.",
+          techs: ["JavaScript", "Shadow DOM", "Chrome Extension (Manifest V3)", "Chrome Storage API", "LGPD Compliance", "UX/UI"],
+        },
+        {
           title: "SGI-SKU & Upload Amazon",
           description:
             "Sistema de gerenciamento de imagens e SKUs integrado com a AWS para operações de e-commerce em larga escala.",
