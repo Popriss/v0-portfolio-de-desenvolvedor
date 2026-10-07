@@ -15,9 +15,9 @@ export function Hero() {
       
       <div className="container mx-auto px-6 relative z-10 pt-16">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-background/40 backdrop-blur-md text-xs text-primary/90 mb-6 shadow-lg shadow-primary/5 animate-pulse">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping" />
-            <span>Gargantua · Gravidade Interativa</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/25 bg-black/50 backdrop-blur-md text-xs text-amber-200/90 mb-6 shadow-lg shadow-amber-500/10">
+            <span className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.8)]" />
+            <span>Gargantua · Interativo</span>
           </div>
 
           <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground/90 mb-4 drop-shadow-sm">
