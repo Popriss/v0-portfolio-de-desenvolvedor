@@ -329,7 +329,7 @@ export function GargantuaBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden bg-[#020408]">
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden bg-[#020408]">
       {/* 3D Parallax Gargantua Container */}
       <div
         ref={containerRef}
@@ -343,11 +343,9 @@ export function GargantuaBackground() {
             alt="Buraco Negro Gargantua"
             fill
             priority
+            unoptimized
             sizes="100vw"
-            onLoad={() => setImageLoaded(true)}
-            className={`object-cover object-center scale-105 transition-opacity duration-1000 ${
-              imageLoaded ? "opacity-90" : "opacity-0"
-            }`}
+            className="object-cover object-center scale-105 opacity-90"
             style={{
               filter: "contrast(1.15) brightness(1.05) saturate(1.12)",
             }}
@@ -364,12 +362,12 @@ export function GargantuaBackground() {
       {/* Interactive GPT6-Style Starfield & Constellation Canvas */}
       <canvas
         ref={particleCanvasRef}
-        className="absolute inset-0 w-full h-full object-cover select-none mix-blend-screen pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover select-none mix-blend-screen pointer-events-none z-10"
       />
 
       {/* Atmospheric Space Gradients for Ultra-Crisp Typography & Legibility */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#020408]/60 via-transparent to-[#020408]/95 pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#020408_100%)] opacity-70 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#020408]/60 via-transparent to-[#020408]/95 pointer-events-none z-20" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#020408_100%)] opacity-70 pointer-events-none z-20" />
     </div>
   );
 }

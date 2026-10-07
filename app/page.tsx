@@ -16,7 +16,7 @@ import { Footer } from "@/components/portfolio/footer";
 export default function Portfolio() {
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-background relative selection:bg-primary/30">
+      <div className="min-h-screen text-foreground relative selection:bg-primary/30">
         <GargantuaBackground />
         <Header />
         <main className="relative z-10">
