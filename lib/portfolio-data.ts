@@ -32,9 +32,23 @@ export const portfolioData = {
       title: "Experiência",
       items: [
         {
+          company: "IDS - Instituto de Diagnóstico",
+          role: "Estagiário & Líder de Projetos",
+          period: "08/2026 - Atual",
+          description:
+            "Liderança de Projetos: Atuo como líder no desenvolvimento e implementação do novo Site Intranet da empresa, gerindo o ciclo de vida do projeto desde o planejamento até a execução.\n\nComunicação Corporativa e Transformação Digital: Criação de um ambiente digital centralizado para otimizar a comunicação interna, centralizar fluxos de informação e facilitar o acesso a recursos institucionais.\n\nDesenvolvimento Acadêmico e Prático: Cumprimento da carga horária de estágio obrigatório, aplicando na prática conceitos acadêmicos de tecnologia e gestão no dia a dia corporativo.",
+          techs: [
+            "Liderança de Projetos",
+            "Intranet",
+            "Transformação Digital",
+            "Gestão de Projetos",
+            "Comunicação Corporativa",
+          ],
+        },
+        {
           company: "E-commerce CoutinhoShop",
           role: "Automações e Engenharia de Dados",
-          period: "11/2025 - Atual",
+          period: "11/2025 - 04/2026",
           description:
             "Responsável pela estruturação do departamento de Automações e Engenharia de Dados. Desenvolvimento de aplicações em Python para orquestração de pedidos e priorização de tarefas via Trello. Criação de sistema de visualização de promoções (Mercado Livre) e ferramenta de upload simultâneo de imagens (Cloudflare R2) para múltiplas lojas. Implementação de dashboards baseados em PostgreSQL e GCP.",
           techs: ["Python", "PostgreSQL", "GCP", "Cloudflare R2", "Trello API"],
@@ -278,9 +292,23 @@ export const portfolioData = {
       title: "Experience",
       items: [
         {
+          company: "IDS - Instituto de Diagnóstico",
+          role: "Intern & Project Leader",
+          period: "08/2026 - Present",
+          description:
+            "Project Leadership: Leading the development and implementation of the company's new Intranet website, managing the project lifecycle from planning to execution.\n\nCorporate Communication & Digital Transformation: Creation of a centralized digital environment to optimize internal communication, streamline information flows, and facilitate access to institutional resources.\n\nAcademic & Practical Development: Fulfilling mandatory internship hours, applying academic technology and management concepts to corporate day-to-day operations.",
+          techs: [
+            "Project Leadership",
+            "Intranet",
+            "Digital Transformation",
+            "Project Management",
+            "Corporate Communication",
+          ],
+        },
+        {
           company: "E-commerce CoutinhoShop",
           role: "Automation & Data Engineering",
-          period: "11/2025 - Present",
+          period: "11/2025 - 04/2026",
           description:
             "Responsible for structuring the Automation and Data Engineering department. Development of Python applications for order orchestration and task prioritization via Trello. Creation of promotion visualization system (Mercado Livre) and simultaneous image upload tool (Cloudflare R2) for multiple stores. Implementation of dashboards based on PostgreSQL and GCP.",
           techs: ["Python", "PostgreSQL", "GCP", "Cloudflare R2", "Trello API"],

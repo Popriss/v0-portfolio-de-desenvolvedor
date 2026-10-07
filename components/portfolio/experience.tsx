@@ -34,7 +34,7 @@ export function Experience() {
                   </span>
                 </div>
 
-                <p className="text-foreground/80 mb-4 leading-relaxed">
+                <p className="text-foreground/80 mb-4 leading-relaxed whitespace-pre-line">
                   {item.description}
                 </p>
 
