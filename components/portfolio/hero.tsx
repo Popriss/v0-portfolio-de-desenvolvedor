@@ -10,16 +10,21 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
+      {/* Subtle translucent atmospheric depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-transparent to-background/60 pointer-events-none" />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 pt-16">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-background/40 backdrop-blur-md text-xs text-primary/90 mb-6 shadow-lg shadow-primary/5 animate-pulse">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping" />
+            <span>Gargantua · Gravidade Interativa</span>
+          </div>
+
+          <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground/90 mb-4 drop-shadow-sm">
             {t.hero.greeting}
           </p>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 tracking-tight text-balance">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 tracking-tight text-balance drop-shadow-md">
             {t.hero.name}
           </h1>
           
