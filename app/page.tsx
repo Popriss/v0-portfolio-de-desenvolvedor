@@ -1,7 +1,7 @@
 "use client";
 
 import { LanguageProvider } from "@/lib/language-context";
-import { GargantuaBackground } from "@/components/portfolio/gargantua-background";
+import { CosmicStarfield } from "@/components/portfolio/cosmic-starfield";
 import { Header } from "@/components/portfolio/header";
 import { Hero } from "@/components/portfolio/hero";
 import { About } from "@/components/portfolio/about";
@@ -17,7 +17,7 @@ export default function Portfolio() {
   return (
     <LanguageProvider>
       <div className="min-h-screen text-foreground relative selection:bg-primary/30">
-        <GargantuaBackground />
+        <CosmicStarfield />
         <Header />
         <main className="relative z-10">
           <Hero />
